@@ -1,24 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DevOps Fundamentals Project</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:linear-gradient(135deg,
+    #00DBDE,
+    #FC00FF);
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.container{
+
+    width:760px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border:2px solid rgba(255,255,255,.4);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.container:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 35px 70px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:45px;
+
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    font-size:46px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:white;
+
+    font-size:18px;
+
+    opacity:.9;
+
+    margin-bottom:40px;
+
+}
+
+.card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.box{
+
+    flex:1;
+
+    min-width:200px;
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:15px;
+
+}
+
+.label{
+
+    color:#666;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+
+}
+
+.value{
+
+    font-size:24px;
+
+    color:#222;
+
+    font-weight:700;
+
+}
+
+.status{
+
+    margin-top:35px;
+
+    background:#00E676;
+
+    color:#004D40;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.footer{
+
+    margin-top:30px;
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial;text-align:center;margin-top:100px">
+<body>
 
-<h1>DevOps Fundamentals Project</h1>
+<div class="container">
 
-<h2>Student Name : Vinayak parkar</h2>
+<div class="logo">
+☁️
+</div>
 
-<h3>Batch Code : A529</h3>
+<h1>DevOps Fundamentals</h1>
 
-<p>Current Date :25-07-2026
-<script>
-document.write(new Date().toDateString())
-</script>
+<p class="subtitle">
+AWS Cloud • Ubuntu Server • Apache Web Server
 </p>
 
-<h2>Hosted on AWS Ubuntu Server</h2>
+<div class="card">
+
+<div class="box">
+
+<div class="label">
+Student
+</div>
+
+<div class="value">
+Vinayak Parkar
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="label">
+Batch
+</div>
+
+<div class="value">
+A529
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="label">
+Date
+</div>
+
+<div class="value">
+
+<script>
+document.write(new Date().toDateString());
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="status">
+✔ Website Successfully Hosted on AWS Ubuntu Server
+</div>
+
+<div class="footer">
+DevOps Fundamentals Project • Apache2 • EC2 • Linux
+</div>
+
+</div>
 
 </body>
+
 </html>
+
