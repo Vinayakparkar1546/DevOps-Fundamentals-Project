@@ -1,48 +1,86 @@
-SSH login activity:
-2026-07-25T16:49:52.984614+00:00 ip-10-0-11-207 sshd-session[1137]: Accepted publickey for ubuntu from 18.206.107.27 port 12970 ssh2: ED25519 SHA256:wdNq/0jJ9HiTKhcFU7wNGJNZldUkEtZ3SYhbwj2v/9A
-2026-07-25T16:59:02.369296+00:00 ip-10-0-11-207 sshd-session[1667]: Accepted publickey for ubuntu from 223.228.131.212 port 49278 ssh2: RSA SHA256:lD/BziuwsWgutaueOVlbTA5cj1Vb6BaM5uO5pO8KUcI
-2026-07-25T17:06:36.078762+00:00 ip-10-0-11-207 sshd-session[1842]: Accepted publickey for ubuntu from 223.228.131.212 port 49673 ssh2: RSA SHA256:lD/BziuwsWgutaueOVlbTA5cj1Vb6BaM5uO5pO8KUcI
-2026-07-25T17:36:15.064134+00:00 ip-10-0-11-207 sshd-session[21870]: Accepted publickey for ubuntu from 18.206.107.29 port 22048 ssh2: ED25519 SHA256:LGIwy7Pr/1sGz0vCPeysKJ5Tmn8jjjToIYdmD984hfM
-2026-07-25T17:52:24.983279+00:00 ip-10-0-11-207 sshd-session[22385]: Accepted publickey for ubuntu from 18.206.107.29 port 6967 ssh2: ED25519 SHA256:5zQjoiWqnQXEgKzcSqflvGu2Casoq+tKGsa+MzIl8bQ
-2026-07-25T18:08:35.377011+00:00 ip-10-0-11-207 sshd-session[23311]: Accepted publickey for ubuntu from 18.206.107.27 port 62562 ssh2: ED25519 SHA256:NClwCkBgYKPHBWVpRDqIU7Jc25ukvrORnEAEoMHweZg
-2026-07-25T18:56:46.953504+00:00 ip-10-0-11-207 sshd-session[24182]: Accepted publickey for ubuntu from 18.206.107.29 port 59213 ssh2: ED25519 SHA256:KzySSCV+ZNND3mK4HcaljKByxgdy3Rwf5CFEykZY+u0
-2026-07-25T18:57:58.211662+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/6 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep Accepted /var/log/auth.log
+=============================================
+      LINUX LOG MONITORING REPORT
+=============================================
 
-Failed login attempts: sudo grep "Failed password" /var/log/auth.log
-N/A
+Server: ip-10-0-11-207
+Date: Wed Aug 12 18:34:43 UTC 2026
 
-system error: sudo grep -i error /var/log/syslog
-2026-07-25T16:49:35.561344+00:00 ip-10-0-11-207 systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) skipped, unmet condition check ConditionPathExists=/var/lib/apport/autoreport
-2026-07-25T16:49:35.561363+00:00 ip-10-0-11-207 systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) skipped, unmet condition check ConditionPathExists=/var/lib/apport/autoreport
-2026-07-25T16:49:35.564437+00:00 ip-10-0-11-207 kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_ERROR)
-2026-07-25T16:49:35.567968+00:00 ip-10-0-11-207 kernel: RAS: Correctable Errors collector initialized.
-2026-07-25T16:49:35.568380+00:00 ip-10-0-11-207 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
-2026-07-25T16:49:37.999263+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
-2026-07-25T16:49:38.009082+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 16:49:37.9994 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
-2026-07-25T16:49:40.272884+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 16:49:38.1744 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
-2026-07-25T16:49:40.373333+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 16:49:38.2142 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T16:49:40.473857+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 16:49:38.2142 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T16:49:40.674756+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 16:49:38.2145 INFO [SerialPort] Write to serial port: SSM Agent unable to acquire credentials: <error>no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T16:49:40.674836+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: #011status code: 400, request id: 80cd11a5-7c5d-4cb6-b05b-57b267d9d018</error>
-2026-07-25T17:07:55.951380+00:00 ip-10-0-11-207 fwupd[5331]: 17:07:55.951 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
-2026-07-25T17:08:30.411677+00:00 ip-10-0-11-207 systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) skipped, unmet condition check ConditionPathExists=/var/lib/apport/autoreport
-2026-07-25T17:08:30.414478+00:00 ip-10-0-11-207 systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) skipped, unmet condition check ConditionPathExists=/var/lib/apport/autoreport
-2026-07-25T17:17:24.285121+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:17:24.2056 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
-2026-07-25T17:17:24.454998+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:17:24.4547 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T17:17:24.556649+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:17:24.4548 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T17:43:41.458766+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:43:41.4580 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
-2026-07-25T17:43:41.559022+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:43:41.4987 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T17:43:41.659496+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 17:43:41.4987 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T18:01:08.117369+00:00 ip-10-0-11-207 fwupd[23067]: 18:01:08.117 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
-2026-07-25T18:10:33.501324+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 18:10:33.5006 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
-2026-07-25T18:10:33.601800+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 18:10:33.5396 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
-2026-07-25T18:36:28.542830+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 18:36:28.5421 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
-2026-07-25T18:36:28.644203+00:00 ip-10-0-11-207 amazon-ssm-agent.amazon-ssm-agent[1080]: 2026-07-25 18:36:28.5878 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 629624132493
+=============================================
+1. FAILED LOGIN ATTEMPTS
+=============================================
+Total Failed Login Attempts: 3
 
-Warning message : sudo grep -i warning /var/log/syslog
-2026-07-25T16:49:35.564884+00:00 ip-10-0-11-207 kernel: i8042: Warning: Keylock active
-2026-07-25T16:49:35.788527+00:00 ip-10-0-11-207 unattended-upgrade-shutdown[736]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
-2026-07-25T17:08:14.592354+00:00 ip-10-0-11-207 snapd[9515]: autorepair.go:177: WARNING: the system booted with an old initrd without unlocked status reporting
+2026-08-11T18:25:41.202917+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/1 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep Failed password /var/log/auth
+2026-08-11T18:25:56.739027+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/1 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep Failed password /var/log/auth.log
+2026-08-12T18:34:43.765812+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep -c Failed password /var/log/auth.log
+2026-08-12T18:34:43.777290+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep Failed password /var/log/auth.log
 
+=============================================
+2. SSH LOGIN ACTIVITY
+=============================================
+Total Successful SSH Logins: 6
 
-task 6 log monitoring and troubleshooting has been saved
+2026-08-10T18:47:48.368426+00:00 ip-10-0-11-207 sshd-session[1358]: Accepted publickey for ubuntu from 18.206.107.29 port 21098 ssh2: ED25519 SHA256:rGiL/OXIi59D5Q5t2la/PfJjInp8iSQ+kP+yAAmtyDQ
+2026-08-11T18:08:50.508383+00:00 ip-10-0-11-207 sshd-session[17339]: Accepted publickey for ubuntu from 18.206.107.27 port 5743 ssh2: ED25519 SHA256:36urIUO1acBj/cQNdNhO+g6OyZamH5feG9A+xtg6p8k
+2026-08-11T18:25:00.691376+00:00 ip-10-0-11-207 sshd-session[17912]: Accepted publickey for ubuntu from 18.206.107.27 port 42836 ssh2: ED25519 SHA256:qZUpRo+ejbMhtvPSxR/qNFBv14fynEe+KvmRhmYEBQ4
+2026-08-11T18:30:28.011279+00:00 ip-10-0-11-207 sshd-session[18331]: Accepted publickey for ubuntu from 18.206.107.27 port 1561 ssh2: ED25519 SHA256:VY9d8uiSysz68ziRhZFZ24Mg3s25rNwvt2/UR1bdJCY
+2026-08-12T18:03:36.324344+00:00 ip-10-0-11-207 sshd-session[21337]: Accepted publickey for ubuntu from 18.206.107.28 port 23925 ssh2: ED25519 SHA256:5dPzTPOksMbrdFFOK0ELYk8QrTrRlFKuAICnxs+eOUI
+2026-08-12T18:34:43.786771+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep -c Accepted /var/log/auth.log
+2026-08-12T18:34:43.796961+00:00 ip-10-0-11-207 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep Accepted /var/log/auth.log
+
+Recent Login Sessions:
+
+=============================================
+3. SYSTEM ERRORS
+=============================================
+System Error Entries: 11
+
+Aug 10 17:58:44 ip-10-0-11-207 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 11 01:47:13 ip-10-0-11-207 sshd-session[2927]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 07:21:39 ip-10-0-11-207 sshd-session[16481]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 08:50:34 ip-10-0-11-207 sshd-session[16610]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 14:06:06 ip-10-0-11-207 sshd-session[17074]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 20:26:50 ip-10-0-11-207 sshd-session[18871]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 20:30:57 ip-10-0-11-207 sshd-session[18884]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 12 04:17:12 ip-10-0-11-207 sshd-session[19919]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 12 09:39:03 ip-10-0-11-207 sshd-session[20510]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 12 11:24:06 ip-10-0-11-207 sshd-session[20645]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]
+Aug 12 15:42:04 ip-10-0-11-207 sshd-session[21166]: error: kex_exchange_identification: read: Connection reset by peer
+
+=============================================
+4. WARNING MESSAGES
+=============================================
+Warning Entries: 48
+
+Aug 11 07:21:39 ip-10-0-11-207 sshd-session[16481]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 08:50:34 ip-10-0-11-207 sshd-session[16610]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 10:36:01 ip-10-0-11-207 kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 11 times, consider switching to WQ_UNBOUND
+Aug 11 11:05:01 ip-10-0-11-207 kernel: workqueue: psi_avgs_work hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+Aug 11 13:30:01 ip-10-0-11-207 kernel: workqueue: psi_avgs_work hogged CPU for >10000us 5 times, consider switching to WQ_UNBOUND
+Aug 11 14:06:06 ip-10-0-11-207 sshd-session[17074]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 14:59:31 ip-10-0-11-207 irqbalance[9876]: Cannot change IRQ 25 affinity: Permission denied
+Aug 11 14:59:31 ip-10-0-11-207 irqbalance[9876]: IRQ 25 affinity is now unmanaged
+Aug 11 15:30:01 ip-10-0-11-207 kernel: workqueue: psi_avgs_work hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+Aug 11 20:15:01 ip-10-0-11-207 kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+Aug 11 20:26:50 ip-10-0-11-207 sshd-session[18871]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 20:30:57 ip-10-0-11-207 sshd-session[18884]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 11 22:13:51 ip-10-0-11-207 irqbalance[9876]: Cannot change IRQ 26 affinity: Permission denied
+Aug 11 22:13:51 ip-10-0-11-207 irqbalance[9876]: IRQ 26 affinity is now unmanaged
+Aug 12 04:17:12 ip-10-0-11-207 sshd-session[19919]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 12 09:39:03 ip-10-0-11-207 sshd-session[20510]: error: kex_exchange_identification: read: Connection reset by peer
+Aug 12 11:24:06 ip-10-0-11-207 sshd-session[20645]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]
+Aug 12 11:42:02 ip-10-0-11-207 kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 35 times, consider switching to WQ_UNBOUND
+Aug 12 12:33:00 ip-10-0-11-207 kernel: workqueue: psi_avgs_work hogged CPU for >10000us 11 times, consider switching to WQ_UNBOUND
+Aug 12 15:42:04 ip-10-0-11-207 sshd-session[21166]: error: kex_exchange_identification: read: Connection reset by peer
+
+=============================================
+5. CONCLUSION
+=============================================
+Linux authentication and system logs were analyzed.
+The report contains:
+- Failed login attempts
+- Successful SSH login activity
+- System errors
+- Warning messages
+
+Report generated successfully on Wed Aug 12 18:34:43 UTC 2026.
